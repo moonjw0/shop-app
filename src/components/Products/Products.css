@@ -1,0 +1,11 @@
+.products{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.products__container{
+  display: flex;
+}
