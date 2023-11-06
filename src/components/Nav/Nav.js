@@ -13,7 +13,11 @@ export default function Nav() {
         </div>
         
         <div className='nav__right'>
-          <span className='nav__right-item'>cart</span>
+          <span className='nav__right-item'>
+            <Link to ="/cart" style={{ textDecoration: "none", color: "black"}}>
+            cart
+            </Link>
+          </span>
           <span className='nav__right-item'>user</span>
           <span className='nav__right-item'>logout</span>
         </div>

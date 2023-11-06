@@ -4,9 +4,9 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } f
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { login } from '../../store/userSlice';
-import './Form.css'
+import './AuthForm.css'
 
-export default function Form({title}) {
+export default function AuthForm({title}) { 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();

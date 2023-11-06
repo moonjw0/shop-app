@@ -3,12 +3,19 @@ import axios from 'axios';
 
 export const fetchProducts = createAsyncThunk(
   'products/fetchProducts', 
-  async(thunkAPI) => {
+  async(selectedCategory, thunkAPI) => {
     try{
-      const response = await axios.get(
-        'https://fakestoreapi.com/products'
-      );
-      console.log('products response', response.data);
+      let response;
+      if(selectedCategory === "All"){
+        response = await axios.get(
+          'https://fakestoreapi.com/products'
+        )
+      } else{
+        response = await axios.get(
+          `https://fakestoreapi.com/products/category/${selectedCategory}`
+        )
+      }
+      // console.log('products response', response.data);
       return response.data;
 
     } catch (error) {
@@ -17,7 +24,7 @@ export const fetchProducts = createAsyncThunk(
 })
 
 const initialState = {
-  status:"",
+  status: "",
   products: [],
 };
 

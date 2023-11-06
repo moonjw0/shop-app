@@ -16,13 +16,9 @@
 }
 
 .nav__left-title, .nav__left-title :hover, .nav__left-title :active{
-  color: black;
+  /* color: black; */
   font-size: 20px;
   font-weight: bold;
-}
-
-.nav__left-title :hover, .nav__left-title :active{
-  color: black;
 }
 
 .nav__right{
@@ -31,4 +27,5 @@
 
 .nav__right-item{
   padding: 3px;
+  cursor: pointer;
 }

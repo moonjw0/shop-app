@@ -1,6 +1,6 @@
 import React from 'react'
 import './LoginPage.css'
-import Form from '../../components/Form/Form'
+import Form from '../../components/AuthForm/AuthForm'
 import { Link } from 'react-router-dom'
 
 export default function LoginPage() {
